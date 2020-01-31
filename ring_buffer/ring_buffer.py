@@ -19,14 +19,6 @@ class RingBuffer:
         else:
             self.storage.add_to_head(item)
         
-        
-        # if self.storage.length < self.capacity:
-        #     self.storage.add_to_head(item)
-        # else:
-        #     current.value = item
-        #     current = current.next
-        #     # if current.prev != True:
-        #     #     current.prev = self.storage.tail
 
     def get(self):
         # Note:  This is the only [] allowed

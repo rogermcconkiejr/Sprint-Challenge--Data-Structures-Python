@@ -44,11 +44,11 @@ class LinkedList:
 
   def reverse_list(self):
     # TO BE COMPLETED
-    prev = None
-    current = self.head 
-    while(current != None): 
-        next = current.next_node
-        current.next_node = prev 
+    prev = None                      # Since you can only move next in Single LL, Set up previous pointer
+    current = self.head              # Start at the head of the list
+    while current is not None:       # Iterate through the list
+        next = current.next_node     # Store the next node as a variable before moving on
+        current.next_node = prev     # Store the previous node as a variable before moving on
         prev = current 
         current = next
-    self.head = prev
+    self.head = prev                 # Set the end of the list (the old tail) as the head
